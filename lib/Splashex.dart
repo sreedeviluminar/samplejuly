@@ -5,6 +5,7 @@ import 'LoginForm.dart';
 void main() {
   runApp(
       MaterialApp(
+        theme: ThemeData(primarySwatch: Colors.orange),
       debugShowCheckedModeBanner: false,
       home: MySplash()));
 }
