@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'Home.dart';
 import 'Register.dart';
 
@@ -9,10 +10,8 @@ class Login extends StatelessWidget {
       appBar: AppBar(
         title: const Text("LoginPage"),
       ),
-
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
-
         children: [
           const Center(
               child: Text("Login Page",
@@ -40,19 +39,24 @@ class Login extends StatelessWidget {
               ),
             ),
           ),
-          //MaterialButton(onPressed: onPressed,child:Text("Login"))
-          SizedBox(
-            height: 20,
-            width: 200,
-            child: ElevatedButton(
+          MaterialButton(
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => HomePage()));
               },
-              // color: Colors.orange,
-              child: const Text("LOGIN"),
-            ),
-          ),
+              child: Text("Login")),
+          // SizedBox(
+          //   height: 20,
+          //   width: 200,
+          //   child: ElevatedButton(
+          //     onPressed: () {
+          //       Navigator.push(context,
+          //           MaterialPageRoute(builder: (context) => HomePage()));
+          //     },
+          //     // color: Colors.orange,
+          //     child: const Text("LOGIN"),
+          //   ),
+          // ),
 
           Padding(
             padding: const EdgeInsets.only(top: 295.0),

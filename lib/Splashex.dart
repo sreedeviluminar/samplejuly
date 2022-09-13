@@ -1,18 +1,21 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
+
 import 'LoginForm.dart';
 
 void main() {
-  runApp(
-      MaterialApp(
-        theme: ThemeData(primarySwatch: Colors.orange),
+  runApp(MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.orange),
       debugShowCheckedModeBanner: false,
       home: MySplash()));
 }
+
 class MySplash extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => MySplashState();
 }
+
 class MySplashState extends State<MySplash> {
   @override
   void initState() {
