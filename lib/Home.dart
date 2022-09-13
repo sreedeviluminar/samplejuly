@@ -16,21 +16,24 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          ListTile(
-              leading: const CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/businesses.png")),
-              title: const Text("Business"),
-              trailing: Wrap(
-                spacing: 30,
-                children: const [Icon(Icons.message), Icon(Icons.phone)],
-              ),
-              onTap: () {
-                Fluttertoast.showToast(
-                  msg: "Hello", // message
-                  toastLength: Toast.LENGTH_SHORT, // length
-                  gravity: ToastGravity.BOTTOM, // location
-                );
-              }),
+          Card(
+            color: Colors.orange,
+            child: ListTile(
+                leading: const CircleAvatar(
+                    backgroundImage: AssetImage("assets/images/businesses.png")),
+                title: const Text("Business"),
+                trailing: Wrap(
+                  spacing: 30,
+                  children: const [Icon(Icons.message), Icon(Icons.phone)],
+                ),
+                onTap: () {
+                  Fluttertoast.showToast(
+                    msg: "Hello", // message
+                    toastLength: Toast.LENGTH_SHORT, // length
+                    gravity: ToastGravity.BOTTOM, // location
+                  );
+                }),
+          ),
 
 
 
