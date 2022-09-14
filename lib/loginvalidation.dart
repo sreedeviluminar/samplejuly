@@ -8,24 +8,20 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final _form = GlobalKey<FormState>(); //for storing form state.
 
+  final _form = GlobalKey<FormState>(); //for storing form state.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Form(
         key: _form, //assigning key to form
-
         child: ListView(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: TextFormField(
                 decoration: const InputDecoration(
-                    labelText: 'Email',
-                    border: OutlineInputBorder()),
-
+                    labelText: 'Email', border: OutlineInputBorder()),
                 validator: (text) {
                   if (text == null || !(text.contains('@')) || text.isEmpty) {
                     return "Enter a valid email address!";
@@ -48,10 +44,9 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(left: 50,right: 50),
+              padding: EdgeInsets.only(left: 50, right: 50),
               child: ElevatedButton(
                   child: Text('Submit'),
-
                   onPressed: () {
                     final isValid = _form.currentState!.validate();
                     if (isValid) {
@@ -67,10 +62,8 @@ class MyApp extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => Register()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Register()));
               },
               child: const Text("Not a user? Register Here"),
             ),
