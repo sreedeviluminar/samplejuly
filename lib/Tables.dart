@@ -6,7 +6,6 @@ void main() {
 }
 
 class MyTable extends StatelessWidget {
-  const MyTable({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
