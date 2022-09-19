@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:samplemay/Drawer/screens/aboutPage.dart';
-import 'package:samplemay/Drawer/screens/otherpage.dart';
+
+import 'aboutPage.dart';
+import 'otherpage.dart';
+
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,10 +11,7 @@ class HomePage extends StatefulWidget {
     return _HomePage();
   }
 }
-
 class _HomePage extends State<HomePage> {
-
-
   String mainProfilePic =
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tX9GUY0RJdxvyvuX0zIx_PHafgmoLdm5Lg&usqp=CAU";
   String otherProfilePic =

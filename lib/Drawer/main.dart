@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:samplemay/Drawer/screens/homepage.dart';
+
+import '../Home.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData(primarySwatch:Colors.pink ),

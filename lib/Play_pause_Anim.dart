@@ -15,6 +15,7 @@ class AnimatedIconExample extends StatefulWidget {
 
 class _AnimatedIconExampleState extends State<AnimatedIconExample>
     with SingleTickerProviderStateMixin {
+
   late AnimationController _animationController;
 
   bool isAnimating = false;
