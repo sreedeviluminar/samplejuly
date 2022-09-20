@@ -51,10 +51,10 @@ class _BasicBottomNavBarState extends State<BasicBottomNavBar> {
               icon: Icon(Icons.chat),
               label: 'Chats',
             ),
-            // BottomNavigationBarItem(
-            //   icon: Icon(Icons.chat),
-            //   label: 'Chats',
-            // ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.add),
+              label: 'Chats',
+            ),
           ],
           currentIndex: _selectedIndex,
           onTap: _onItemTapped,
