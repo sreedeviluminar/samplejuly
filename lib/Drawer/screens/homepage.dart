@@ -5,13 +5,13 @@ import 'aboutPage.dart';
 import 'otherpage.dart';
 
 
-class HomePage extends StatefulWidget {
+class HomePagedraw extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _HomePage();
+    return _HomePagedraw();
   }
 }
-class _HomePage extends State<HomePage> {
+class _HomePagedraw extends State<HomePagedraw> {
   String mainProfilePic =
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tX9GUY0RJdxvyvuX0zIx_PHafgmoLdm5Lg&usqp=CAU";
   String otherProfilePic =
@@ -38,11 +38,12 @@ class _HomePage extends State<HomePage> {
                       onTap: () => print("Current User")),
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/images/fullscreen.jpg"),
+                        image: AssetImage("assets/images/businesses.png"),
                     fit: BoxFit.cover),
                   ),
                 ),
                 ListTile(
+                  dense: true,
                     title: Text("Home Page"),
                     trailing: Icon(Icons.menu),
                     onTap: () {
@@ -53,6 +54,7 @@ class _HomePage extends State<HomePage> {
                       ));
                     }),
                 ListTile(
+                    dense: true,
                     title: Text("About Page"),
                     trailing: Icon(Icons.info),
                     onTap: () {
@@ -63,6 +65,7 @@ class _HomePage extends State<HomePage> {
                       ));
                     }),
                 ListTile(
+                  dense: true,
                     title: const Text("Settings Page"),
                     trailing: const Icon(Icons.security),
                     onTap: () {
