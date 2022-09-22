@@ -29,7 +29,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           color: Colors.white,
           buttonBackgroundColor: Colors.white,
           backgroundColor: Colors.blueAccent,
-          animationCurve: Curves.easeInOut,
+          animationCurve: Curves.elasticIn,
           animationDuration: const Duration(milliseconds: 600),
           onTap: (index) {
             setState(() {
@@ -48,8 +48,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 ElevatedButton(
                   child: Text('Go To Page of index 1'),
                   onPressed: () {
-                    final CurvedNavigationBarState? navBarState =
-                        _bottomNavigationKey.currentState;
+                    final CurvedNavigationBarState? navBarState = _bottomNavigationKey.currentState;
                     navBarState?.setPage(1);
                   },
                 )

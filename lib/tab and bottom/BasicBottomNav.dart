@@ -10,6 +10,7 @@ class BasicBottomNavBar extends StatefulWidget {
 }
 
 class _BasicBottomNavBarState extends State<BasicBottomNavBar> {
+
   int _selectedIndex = 0;
   static const List<Widget> _pages = <Widget>[
     Icon(Icons.call, size: 150,),
@@ -17,6 +18,7 @@ class _BasicBottomNavBarState extends State<BasicBottomNavBar> {
     Icon(Icons.chat, size: 150,),
     Icon(Icons.chat, size: 150,),
   ];
+
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
