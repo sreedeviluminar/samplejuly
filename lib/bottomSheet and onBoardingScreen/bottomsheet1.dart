@@ -43,7 +43,9 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              ElevatedButton(onPressed: () {}, child: const Text('Submit'))
+              ElevatedButton(onPressed: () {
+                Navigator.of(ctx).pop();
+                }, child: const Text('Submit'))
             ],
           ),
         ));
