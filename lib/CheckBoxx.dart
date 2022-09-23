@@ -5,7 +5,6 @@ void main() => runApp( MyApp());
 /// main application widget
 class MyApp extends StatelessWidget {
 
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,7 +25,9 @@ class MyStatefulWidget extends StatefulWidget {
 
 /// private State class that goes with MyStatefulWidget
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+
   bool isChecked = false;
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -42,6 +43,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               });
             },
           ),
+
         ],
       ),
     );
