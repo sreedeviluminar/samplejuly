@@ -13,8 +13,7 @@ class AnimatedIconExample extends StatefulWidget {
   _AnimatedIconExampleState createState() => _AnimatedIconExampleState();
 }
 
-class _AnimatedIconExampleState extends State<AnimatedIconExample>
-    with SingleTickerProviderStateMixin {
+class _AnimatedIconExampleState extends State<AnimatedIconExample> with SingleTickerProviderStateMixin {
 
   late AnimationController _animationController;
 
@@ -41,7 +40,7 @@ class _AnimatedIconExampleState extends State<AnimatedIconExample>
           child: AnimatedIcon(
             size: 200, //size of the AnimatedIcon
             color: Colors.green, //color of the AnimatedIcon
-            icon: AnimatedIcons.play_pause,
+            icon: AnimatedIcons.add_event,
             progress: _animationController,
           ),
         ),
