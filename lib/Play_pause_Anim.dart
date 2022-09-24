@@ -44,10 +44,8 @@ class _AnimatedIconExampleState extends State<AnimatedIconExample> with SingleTi
             progress: _animationController,
           ),
         ),
-      ),
-    );
+      ),);
   }
-
   void changeIcon() {
 //rebuilds UI with changing icon.
     setState(() {
@@ -55,8 +53,7 @@ class _AnimatedIconExampleState extends State<AnimatedIconExample> with SingleTi
       isAnimating ? _animationController.forward() : _animationController.reverse();
     });
   }
-
-//disposes AnimationController.
+  //disposes AnimationController.
   @override
   void dispose() {
     _animationController.dispose();
