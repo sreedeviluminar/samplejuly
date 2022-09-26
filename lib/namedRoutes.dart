@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:samplemay/grid%20and%20list/flutterlist.dart';
+import 'package:samplejuly/Register.dart';
+import 'package:samplejuly/Tables.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home:  HomePage(),
       routes: {
-        'settings': (BuildContext ctx) => const SettingsPage(),
-        'listpage': (BuildContext ct) => MyList(),
+        'table': (BuildContext ctx) =>  MyTable(),
+        'Register': (BuildContext ct) => Register(),
       },
     );
   }
@@ -37,7 +38,7 @@ class HomePage extends StatelessWidget {
             children: [
               TextButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed('settings');
+                    Navigator.of(context).pushNamed('Register');
                   },
                   child: const Text('Register')),
               const SizedBox(
@@ -45,9 +46,9 @@ class HomePage extends StatelessWidget {
               ),
               TextButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed('listpage');
+                    Navigator.of(context).pushNamed('table');
                   },
-                  child: const Text('Login')),
+                  child: const Text('Table')),
             ],
           ),
         ));
