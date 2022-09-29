@@ -53,7 +53,7 @@ class BackGroundTile extends StatelessWidget {
   final Color? backgroundColor;
   final IconData icondata;
 
-  BackGroundTile({ this.backgroundColor, required this.icondata});
+   BackGroundTile({ this.backgroundColor, required this.icondata});
 
   @override
   Widget build(BuildContext context) {
